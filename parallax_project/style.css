@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+} 
+
+#wrapper{
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    perspective: 15px;
+}
+
+.container{
+    
+    /* border: 3px solid green; */
+    height:100%;
+    /* width: 100%; */
+    /* flex-basis: 100%; */
+    display: flex;
+    position: relative;
+    /* to align in center */
+    justify-content: center;
+    align-items: center;
+    /* to preserve 3-d  */
+    transform-style:preserve-3d;
+    /* todeside order of layers */
+    z-index: -1;
+}
+/* .text{
+    align-items: flex-start;
+} */
+
+ .background{
+    transform: translateZ(-50px) scale(4.4);
+    
+}
+.foreground{
+    transform: translateZ(-15px) scale(2) ;
+} 
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index:-1;
+    /* object-fit: cover; */
+} 
+
+h1{
+    position: absolute;
+    color: greenyellow;
+    font-size: 4rem;
+    top: 2rem;
+    /* left: ; */
+    /* right: 50%; */
+    letter-spacing: 1px;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 3);
+    
+
+}
+
+section{
+    background-color: lightgrey;
+    /* padding: 0rem; */
+    
+    
+}
+.secHed{
+    font-size: 2.5rem;
+    /* padding: 0rem; */
+    text-align: center;
+}
+.Amz{
+    /* color:floralwhite; */
+    font-size: 1.3rem;
+    padding: 2rem;
+    margin: 1rem; 
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+
+.bg1{
+    background-image: url(https://www.hindustantimes.com/ht-img/img/2023/08/05/1600x900/A-sunrise-as-seen-in-British-Columbia--Canada---Sh_1691251851275.jpg)
+}
+
+.bg2{
+    background-image: url(https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQFG-e3Q-37EYTnHHMb_nQUHcry9c_1i3mnTnQJaKXioEJDk-v9gTZPWVyfMLKEIyEyKeqRG-rnhuFeTJzBzpVgbYKk4-Kc8l244Zetww);
+}
+
+.bg3{
+    background-image: url(https://kidzfeed.com/wp-content/uploads/2023/01/Animals-of-the-Amazon-Rainforest.jpg);
+}
+
+.bg4{
+    background-image: url(https://www.wallpapers13.com/wp-content/uploads/2016/01/Beautiful-beach-with-sand-green-palm-trees-clear-sea-water-wallpaper-HD.jpg);
+}
+
+.bg5{
+    background-image: url(https://cdn.cdnparenting.com/articles/2018/05/106945244-H.webp);
+}
+.desc{
+    
+    background-color:transparent;
+    color:chartreuse;
+    position: absolute;
+    font-size: 2rem;
+    top: 11rem; 
+    left: 45%;
+    /* right: 35%; */
+    letter-spacing: 3px;
+    text-shadow:  0 0 5px rgba(0, 0, 0, 4);
+
+}
+b{
+    text-align: right;
+}
